@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Notification test
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label>Nombre de notifications : {{ notificationNumber }}</ion-label>
+  </ion-item>
+
+  <ion-button (click)="resetBadgeCount()" expand="block">
+    Reset
+  </ion-button>
+  <ion-list>
+    <ion-item *ngFor="let notification of notificationDataList">
+      {{ notification.data.key_1 }}
+    </ion-item>
+  </ion-list>
+
+  <capacitor-google-map id="map" style="display:inline-block; width: 400px; height: 250px; opacity: 100%;"></capacitor-google-map>
+</ion-content>

@@ -1,0 +1,15 @@
+{
+	"appId": "com.cafpi.leader",
+	"appName": "leader",
+	"webDir": "www",
+	"bundledWebRuntime": false,
+	"plugins": {
+		"PushNotifications": {
+			"presentationOptions": [
+				"badge",
+				"sound",
+				"alert"
+			]
+		}
+	}
+}
